@@ -149,8 +149,11 @@ pip install -r requirements.txt
 │   ├── smote_augmentation.py      # SMOTE preprocessing
 │   ├── evaluate_cvae.py           # C-VAE evaluation
 │   └── evaluate_cgan.py           # C-GAN evaluation
+├── project_proposal/
+│   └── Conditional Generative Models for Network Attack Synthesist.pptx           # Project presentation slides
 ├── report/
-│   └── final_report.pdf           # Project report
+│   └── Conditional Generative Models for Network Attack Synthesis.pdf             # Project report
+│   └── Conditional Generative Models for Network Attack Synthesis.zip             # Latex Source Code
 ├── environment.yml                # Conda environment
 ├── requirements.txt               # Python dependencies
 └── README.md                      # This file
