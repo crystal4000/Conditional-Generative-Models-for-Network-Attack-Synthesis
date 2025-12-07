@@ -1,0 +1,128 @@
+
+NSL-KDD Dataset Exploration for Final Project
+
+Loading training data...
+Loaded 125973 training samples
+
+Loading test data...
+Loaded 22544 test samples
+
+Dataset shapes:
+  Train: (125973, 43)
+  Test: (22544, 43)
+
+Feature breakdown:
+  Categorical features: 3
+  Numerical features: 38
+
+Missing values check:
+  Train: 0
+  Test: 0
+
+Raw attack labels in training set:
+label
+normal             67343
+neptune            41214
+satan               3633
+ipsweep             3599
+portsweep           2931
+smurf               2646
+nmap                1493
+back                 956
+teardrop             892
+warezclient          890
+pod                  201
+guess_passwd          53
+buffer_overflow       30
+warezmaster           20
+land                  18
+imap                  11
+rootkit               10
+loadmodule             9
+ftp_write              8
+multihop               7
+phf                    4
+perl                   3
+spy                    2
+Name: count, dtype: int64
+Total unique attack types: 23
+
+--- Attack Category Distribution (Train) ---
+category
+Normal    67343
+DoS       45927
+Probe     11656
+R2L         995
+U2R          52
+Name: count, dtype: int64
+
+As percentages:
+category
+Normal    53.46
+DoS       36.46
+Probe      9.25
+R2L        0.79
+U2R        0.04
+Name: proportion, dtype: float64
+
+--- Attack Category Distribution (Test) ---
+category
+Normal    9711
+DoS       7458
+R2L       2754
+Probe     2421
+U2R        200
+Name: count, dtype: int64
+
+As percentages:
+category
+Normal    43.08
+DoS       33.08
+R2L       12.22
+Probe     10.74
+U2R        0.89
+Name: proportion, dtype: float64
+
+Saved visualization: dataset_analysis/class_distribution.png
+
+Sample statistics for first 10 numerical features:
+           duration  ...  num_compromised
+count  125973.00000  ...    125973.000000
+mean      287.14465  ...         0.279250
+std      2604.51531  ...        23.942042
+min         0.00000  ...         0.000000
+25%         0.00000  ...         0.000000
+50%         0.00000  ...         0.000000
+75%         0.00000  ...         0.000000
+max     42908.00000  ...      7479.000000
+
+[8 rows x 10 columns]
+
+Categorical feature values:
+
+protocol_type - 3 unique values:
+protocol_type
+tcp     102689
+udp      14993
+icmp      8291
+Name: count, dtype: int64
+
+service - 70 unique values:
+service
+http        40338
+private     21853
+domain_u     9043
+smtp         7313
+ftp_data     6860
+Name: count, dtype: int64
+
+flag - 11 unique values:
+flag
+SF      74945
+S0      34851
+REJ     11233
+RSTR     2421
+RSTO     1562
+Name: count, dtype: int64
+
+Done with exploration!
