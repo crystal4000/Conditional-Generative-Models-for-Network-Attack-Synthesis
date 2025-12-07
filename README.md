@@ -336,7 +336,7 @@ If you use this code or findings in your research, please cite:
 ## Acknowledgments
 
 - **Course**: CS 5331 - Generative AI, Texas Tech University
-- **Instructor**: Dr. Stas Tiomkin
+- **Instructor**: Dr. Stas Tiomkin [Stas.Tiomkin@ttu.edu]
 - **Dataset**: NSL-KDD from Canadian Institute for Cybersecurity
 - **Frameworks**: PyTorch, scikit-learn, imbalanced-learn
 
@@ -352,7 +352,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or collaboration:
 - Tania-Amanda Fredrick Eneye: tafredri@ttu.edu
-- Richard Linn: richard.linn@ttu.edu
+- Richard Linn: rilinn@ttu.edu
 
 ---
 
