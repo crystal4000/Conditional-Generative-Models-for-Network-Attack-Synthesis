@@ -20,7 +20,7 @@ os.makedirs('models/cvae', exist_ok=True)
 os.makedirs('plots/cvae', exist_ok=True)
 
 # Device setup
-device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f"Using device: {device}\n")
 
 # Load preprocessed data

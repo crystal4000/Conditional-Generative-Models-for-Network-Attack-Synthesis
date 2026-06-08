@@ -30,7 +30,7 @@ from bagan_gp import BAGAN_GP, compute_gradient_penalty
 os.makedirs('models/bagan', exist_ok=True)
 os.makedirs('plots/bagan', exist_ok=True)
 
-device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f"Using device: {device}\n")
 
 # Load data

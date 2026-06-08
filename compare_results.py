@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from cgan import ConditionalGAN
 
-device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load test data
 data = torch.load('preprocessed_data/nslkdd_processed.pt', weights_only=False)
