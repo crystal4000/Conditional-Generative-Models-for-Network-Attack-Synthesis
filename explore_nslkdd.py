@@ -76,7 +76,7 @@ train_df = pd.read_csv('NSL-KDD-Dataset\KDDTrain+.txt', names=column_names, head
 print(f"Loaded {len(train_df)} training samples")
 
 print("\nLoading test data...")
-test_df = pd.read_csv('NSL-KDD-Dataset\KDDTest+.txt', names=column_names, header=None)
+test_df = pd.read_csv('NSL-KDD-Dataset/KDDTest+.txt', names=column_names, header=None)
 print(f"Loaded {len(test_df)} test samples")
 
 print(f"\nDataset shapes:")
