@@ -49,8 +49,8 @@ print("\nPreprocessing NSL-KDD for Conditional Generative Models\n")
 
 # Load data
 print("Loading datasets...")
-train_df = pd.read_csv('NSL-KDD-Dataset\KDDTrain+.txt', names=column_names, header=None)
-test_df = pd.read_csv('NSL-KDD-Dataset\KDDTest+.txt', names=column_names, header=None)
+train_df = pd.read_csv('NSL-KDD-Dataset/KDDTrain+.txt', names=column_names, header=None)
+test_df = pd.read_csv('NSL-KDD-Dataset/KDDTest+.txt', names=column_names, header=None)
 
 # Map to categories
 train_df['category'] = train_df['label'].map(attack_mapping)
